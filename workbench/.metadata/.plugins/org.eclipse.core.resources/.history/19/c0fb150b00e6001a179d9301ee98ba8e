@@ -1,0 +1,64 @@
+2020-08-24 16:32:40 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dxc.cricketmatch.test.controller.CricketMatchControllerTest], using SpringBootContextLoader
+2020-08-24 16:32:40 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.dxc.cricketmatch.test.controller.CricketMatchControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-24 16:32:40 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.dxc.cricketmatch.test.controller.CricketMatchControllerTest]: CricketMatchControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-08-24 16:32:40 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.dxc.cricketmatch.CricketprojectApplication for test class com.dxc.cricketmatch.test.controller.CricketMatchControllerTest
+2020-08-24 16:32:40 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-08-24 16:32:40 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@cad498c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e6454ec, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2accdbb5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@b62d79, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6631f5ca, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5ace1ed4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1613674b, org.springframework.test.context.event.EventPublishingTestExecutionListener@27ff5d15, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e096385, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@649bec2e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@693fe6c9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@34f5090e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@31e5415e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@a2431d0]
+2020-08-24 16:32:44 [main] INFO  c.d.c.t.c.CricketMatchControllerTest -
+				Starting CricketMatchControllerTest on DESKTOP-8LKM104 with PID 14040 (started by lenovo in D:\workbench\cricketproject)
+2020-08-24 16:32:44 [main] INFO  c.d.c.t.c.CricketMatchControllerTest -
+				No active profile set, falling back to default profiles: default
+2020-08-24 16:32:47 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 16:32:48 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext -
+				Initializing Spring TestDispatcherServlet ''
+2020-08-24 16:32:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Initializing Servlet ''
+2020-08-24 16:32:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Completed initialization in 19 ms
+2020-08-24 16:32:48 [main] INFO  c.d.c.t.c.CricketMatchControllerTest -
+				Started CricketMatchControllerTest in 6.106 seconds (JVM running for 10.906)
+2020-08-24 16:32:48 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring TestDispatcherServlet ''
+2020-08-24 16:32:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Initializing Servlet ''
+2020-08-24 16:32:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Completed initialization in 0 ms
+2020-08-24 16:32:48 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2020-08-24 16:32:48 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring TestDispatcherServlet ''
+2020-08-24 16:32:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Initializing Servlet ''
+2020-08-24 16:32:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Completed initialization in 0 ms
+2020-08-24 16:32:49 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring TestDispatcherServlet ''
+2020-08-24 16:32:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Initializing Servlet ''
+2020-08-24 16:32:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Completed initialization in 0 ms
+2020-08-24 16:32:49 [main] WARN  o.s.web.servlet.PageNotFound -
+				No mapping for POST /cricketmatch/api/recommendedMatch
+2020-08-24 16:32:49 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring TestDispatcherServlet ''
+2020-08-24 16:32:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Initializing Servlet ''
+2020-08-24 16:32:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Completed initialization in 0 ms
+2020-08-24 16:32:49 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring TestDispatcherServlet ''
+2020-08-24 16:32:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Initializing Servlet ''
+2020-08-24 16:32:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Completed initialization in 0 ms
+2020-08-24 16:32:49 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2020-08-24 16:32:49 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'

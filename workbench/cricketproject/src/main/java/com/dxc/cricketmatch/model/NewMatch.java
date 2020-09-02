@@ -1,0 +1,268 @@
+package com.dxc.cricketmatch.model;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import io.swagger.annotations.ApiModelProperty;
+
+/**
+ * @author Paartha 
+ * NewMatch is model class used to transfer data.
+ * {@Document } is Identifies a domain object to be persisted to MongoDB
+ *
+ */
+@Document
+public class NewMatch {
+	@ApiModelProperty(notes = "cricket match id", name = "matchId", value = "12345" ,dataType = "long" ,required = true)
+	@Id
+	private long matchId;
+	@ApiModelProperty(notes = "Cricket Match Team1 Name", name = "team1", dataType = "String", required = true)
+	private String team1;
+	@ApiModelProperty(notes = "Cricket Match Team2 Name", name = "team2", dataType = "String", required = true)
+	private String team2;
+	@ApiModelProperty(notes = "Cricket Match Team1 Name", name = "team1", dataType = "Date", required = true)
+	private Date date;
+	@ApiModelProperty(notes = "Cricket Match Started or not", name = "matchStarted", dataType = "boolean", required = true)
+	private boolean matchStarted;
+	@ApiModelProperty(notes = "Cricket Match Toss winner team name", name = "toss_winner_team", dataType = "String", required = true)
+	private String toss_winner_team;
+	@ApiModelProperty(notes = "Cricket type of match", name = "type", dataType = "String", required = true)
+	private String type;
+	@ApiModelProperty(notes = "Cricket Match Toss winner team name", name = "winner_team", dataType = "String", required = true)
+	private String winner_team;
+	@ApiModelProperty(notes = "Cricket match recommended user email id", name = "email", dataType = "List<String>", required = true)
+	private List<String> email;
+	
+	/**
+	 * Default constructor
+	 */
+	public NewMatch() {
+		super();
+	}
+
+	/**
+	 * @param matchId is long type, it is NewMatch ID
+	 * @param team1 is String type, it is NewMatch team-1 name
+	 * @param team2 is String type, it is NewMatch team-2 name
+	 * @param date is java.util.Date type, indicates match date
+	 * @param matchStarted is boolean type, indicates match started or not
+	 * @param toss_winner_team is String type, data related to toss winner team name 
+	 * @param type is String type, indicates type of match
+	 * @param winner_team is String type, data related to toss winner team name
+	 */
+	public NewMatch(long matchId, String team1, String team2, Date date, boolean matchStarted, String toss_winner_team,
+			String type, String winner_team) {
+		super();
+		this.matchId = matchId;
+		this.team1 = team1;
+		this.team2 = team2;
+		this.date = date;
+		this.matchStarted = matchStarted;
+		this.toss_winner_team = toss_winner_team;
+		this.type = type;
+		this.winner_team = winner_team;
+	}
+
+	/**
+	 * @return NewMatch id
+	 */
+	public long getMatchId() {
+		return matchId;
+	}
+
+	/**
+	 * @param matchId to set the match id
+	 * 
+	 */
+	public void setMatchId(long matchId) {
+		this.matchId = matchId;
+	}
+
+	/**
+	 * @return team-1 name
+	 */
+	public String getTeam1() {
+		return team1;
+	}
+
+	/**
+	 * @param team1 set the team-1 name
+	 */
+	public void setTeam1(String team1) {
+		this.team1 = team1;
+	}
+
+	/**
+	 * @return team2 name
+	 */
+	public String getTeam2() {
+		return team2;
+	}
+
+	/**
+	 * @param team2 set the team-2 name
+	 */
+	public void setTeam2(String team2) {
+		this.team2 = team2;
+	}
+
+	/**
+	 * @return date is match date
+	 */
+	public Date getDate() {
+		return date;
+	}
+
+	/**
+	 * @param date set the match date
+	 */
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	/**
+	 * @return matchStarted is match started or not
+	 */
+	public boolean isMatchStarted() {
+		return matchStarted;
+	}
+
+	/**
+	 * @param matchStarted is set the match is started or not, true for match started,
+	 * false for match not started
+	 */
+	public void setMatchStarted(boolean matchStarted) {
+		this.matchStarted = matchStarted;
+	}
+
+	/**
+	 * @return toss_winner_team is toss winner team name
+	 */
+	public String getToss_winner_team() {
+		return toss_winner_team;
+	}
+
+	/**
+	 * @param toss_winner_team set the toss winner team name
+	 */
+	public void setToss_winner_team(String toss_winner_team) {
+		this.toss_winner_team = toss_winner_team;
+	}
+
+	/**
+	 * @return type of match
+	 */
+	public String getType() {
+		return type;
+	}
+
+	/**
+	 * @param type of match
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	/**
+	 * @return winner_team is toss winner team name
+	 */
+	public String getWinner_team() {
+		return winner_team;
+	}
+
+	
+	
+	/**
+	 * @return email
+	 */
+	public List<String> getEmail() {
+		return email;
+	}
+
+	/**
+	 * @param email
+	 */
+	public void setEmail(List<String> email) {
+		this.email = email;
+	}
+
+	/**
+	 * @param winner_team set the toss winner team name
+	 */
+	public void setWinner_team(String winner_team) {
+		this.winner_team = winner_team;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((date == null) ? 0 : date.hashCode());
+		result = prime * result + (int) (matchId ^ (matchId >>> 32));
+		result = prime * result + (matchStarted ? 1231 : 1237);
+		result = prime * result + ((team1 == null) ? 0 : team1.hashCode());
+		result = prime * result + ((team2 == null) ? 0 : team2.hashCode());
+		result = prime * result + ((toss_winner_team == null) ? 0 : toss_winner_team.hashCode());
+		result = prime * result + ((type == null) ? 0 : type.hashCode());
+		result = prime * result + ((winner_team == null) ? 0 : winner_team.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		NewMatch other = (NewMatch) obj;
+		if (date == null) {
+			if (other.date != null)
+				return false;
+		} else if (!date.equals(other.date))
+			return false;
+		if (matchId != other.matchId)
+			return false;
+		if (matchStarted != other.matchStarted)
+			return false;
+		if (team1 == null) {
+			if (other.team1 != null)
+				return false;
+		} else if (!team1.equals(other.team1))
+			return false;
+		if (team2 == null) {
+			if (other.team2 != null)
+				return false;
+		} else if (!team2.equals(other.team2))
+			return false;
+		if (toss_winner_team == null) {
+			if (other.toss_winner_team != null)
+				return false;
+		} else if (!toss_winner_team.equals(other.toss_winner_team))
+			return false;
+		if (type == null) {
+			if (other.type != null)
+				return false;
+		} else if (!type.equals(other.type))
+			return false;
+		if (winner_team == null) {
+			if (other.winner_team != null)
+				return false;
+		} else if (!winner_team.equals(other.winner_team))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "NewMatch [matchId=" + matchId + ", team1=" + team1 + ", team2=" + team2 + ", date=" + date
+				+ ", matchStarted=" + matchStarted + ", toss_winner_team=" + toss_winner_team + ", type=" + type
+				+ ", winner_team=" + winner_team + "]";
+	}
+	
+		
+}

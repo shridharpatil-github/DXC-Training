@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="keepnote-step2-boilerplate"/>
+<aop-project name="spring-boot-customer"/>
+<aop-project name="spring-bootwithhibernate-customer"/>
+<aop-project name="spring-boot-item"/>
+</aop-reference-model>

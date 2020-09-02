@@ -1,0 +1,70 @@
+package com.dxc.cricketmatch.response;
+
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+
+import com.dxc.cricketmatch.model.NewMatch;
+
+import io.swagger.annotations.ApiModelProperty;
+
+/**
+ * @author Shreedharagowda
+ * CricketMatchResponse is model class for response from boot api 
+ * it will helpful for send response in better way 
+ *
+ */
+public class CricketMatchResponse {
+	
+	@ApiModelProperty(notes = "Response status", name = "httpStatus", dataType = "HttpStatus", required = true)
+	private HttpStatus httpStatus;
+	@ApiModelProperty(notes = "Response Message", name = "message", dataType = "String", required = true)
+	private String message;
+	@ApiModelProperty(notes = "Response set the recommended matches", name = "newMatches", dataType = "List<NewMatch>", required = false)
+	private List<NewMatch> newMatches;
+	
+	/**
+	 * @return httpStatus 
+	 */
+	
+	public HttpStatus getHttpStatus() {
+		return httpStatus;
+	}
+	
+	/**
+	 * @param httpStatus set the HttpStatus
+	 */
+	public void setHttpStatus(HttpStatus httpStatus) {
+		this.httpStatus = httpStatus;
+	}
+	
+	
+	/**
+	 * @return message 
+	 */
+	public String getMessage() {
+		return message;
+	}
+	
+	/**
+	 * @param message set the message 
+	 */
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	/**
+	 * @return {@link NewMatch} list of matches
+	 */
+	public List<NewMatch> getNewMatches() {
+		return newMatches;
+	}
+	
+	
+	/**
+	 * @param newMatches 
+	 */
+	public void setNewMatches(List<NewMatch> newMatches) {
+		this.newMatches = newMatches;
+	}
+}

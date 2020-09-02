@@ -1,0 +1,5 @@
+package com.dxc.cricketmatch.controller;
+
+public class SwaggerController {
+
+}

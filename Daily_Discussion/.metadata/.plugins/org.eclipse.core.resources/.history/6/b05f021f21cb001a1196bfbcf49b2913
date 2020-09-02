@@ -1,0 +1,53 @@
+package com.dxc.item.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.dxc.item.model.Item;
+import com.dxc.item.repo.ItemRepo;
+
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Autowired
+	private ItemRepo repo;
+	
+	@Override
+	public boolean addItem(Item item) {
+		repo.save(item);
+		return true;
+	}
+
+	@Override
+	public boolean deleteItem(int itemId) {
+		repo.deleteById(itemId);
+		return true;
+	}
+
+	@Override
+	public boolean updateItem(int itemId,Item item) {
+		
+//		repo.update(item.getItemName(), item.getPrice(), itemId);
+		Item item2 = repo.findById(itemId).get();
+		item2.setItemName(item.getItemName());
+		item2.setPrice(item.getPrice());
+		return true;
+		
+//		
+//		Item itemToUpdate = repo.findById(itemId).get();
+//		if(itemToUpdate != null) {
+//			repo.save(item);
+//			return true;
+//		}
+//		return false;
+	}
+
+	@Override
+	public List<Item> getAllItems() {
+		
+		return repo.findAll();
+	}
+
+}

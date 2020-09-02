@@ -1,0 +1,32 @@
+2020-08-25 16:27:11 [main] INFO  o.s.b.t.a.d.m.DataMongoTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dxc.cricketmatch.test.repository.CricketRepositoryTest], using SpringBootContextLoader
+2020-08-25 16:27:11 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.dxc.cricketmatch.test.repository.CricketRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-25 16:27:11 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.dxc.cricketmatch.test.repository.CricketRepositoryTest]: CricketRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-08-25 16:27:13 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.dxc.cricketmatch.test.repository.CricketRepositoryTest for test class com.dxc.cricketmatch.test.repository.CricketRepositoryTest
+2020-08-25 16:27:13 [main] INFO  o.s.b.t.a.d.m.DataMongoTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-08-25 16:27:13 [main] INFO  o.s.b.t.a.d.m.DataMongoTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29647f75, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3315d2d7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d6e7bab, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5fa07e12, org.springframework.test.context.support.DirtiesContextTestExecutionListener@55b53d44, org.springframework.test.context.transaction.TransactionalTestExecutionListener@482bce4f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@366647c2, org.springframework.test.context.event.EventPublishingTestExecutionListener@6a6afff2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1649b0e6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@865dd6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4da4253, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3972a855, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@62e7f11d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@503d687a]
+2020-08-25 16:27:19 [main] INFO  c.d.c.t.r.CricketRepositoryTest -
+				Starting CricketRepositoryTest on DESKTOP-8LKM104 with PID 4968 (started by lenovo in D:\workbench\cricketproject)
+2020-08-25 16:27:19 [main] INFO  c.d.c.t.r.CricketRepositoryTest -
+				No active profile set, falling back to default profiles: default
+2020-08-25 16:27:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-08-25 16:27:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 879ms. Found 1 MongoDB repository interfaces.
+2020-08-25 16:27:29 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-08-25 16:27:29 [cluster-ClusterId{value='5f44ee993847b53be0181349', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:8}] to localhost:27017
+2020-08-25 16:27:29 [cluster-ClusterId{value='5f44ee993847b53be0181349', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11011000}
+2020-08-25 16:27:31 [main] INFO  c.d.c.t.r.CricketRepositoryTest -
+				Started CricketRepositoryTest in 16.298 seconds (JVM running for 31.78)
+2020-08-25 16:27:32 [main] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:2, serverValue:9}] to localhost:27017
+2020-08-25 16:27:32 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection -
+				Closed connection [connectionId{localValue:2, serverValue:9}] to localhost:27017 because the pool has been closed.

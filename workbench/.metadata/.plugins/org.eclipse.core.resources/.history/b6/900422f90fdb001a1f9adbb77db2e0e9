@@ -1,0 +1,16 @@
+package com.dxc.cricketmatch.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dxc.cricketmatch.service.CricketMatchService;
+
+@RestController
+@RequestMapping("cricketmatch/api")
+public class CricketMatchController {
+
+	@Autowired
+	private CricketMatchService service;
+	
+}

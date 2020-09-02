@@ -1,0 +1,55 @@
+package com.dxc.cricketmatch.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dxc.cricketmatch.model.NewMatch;
+import com.dxc.cricketmatch.response.CricketMatchResponse;
+import com.dxc.cricketmatch.service.CricketMatchService;
+
+@RestController
+@RequestMapping("cricketmatch/api")
+public class CricketMatchController {
+
+	@Autowired
+	private CricketMatchService service;
+	
+	private final String success = "success";
+	
+	private final String failed = "failed";
+	
+	@PostMapping("/recommededMatch")
+	public CricketMatchResponse addToRecommended(@RequestBody NewMatch newMatch) {
+		CricketMatchResponse response = new CricketMatchResponse();
+		if(service.addToRecommended(newMatch)) {
+			response.setHttpStatus(HttpStatus.OK);
+			response.setMessage(success);
+		}else {
+			response.setHttpStatus(HttpStatus.BAD_REQUEST);
+			response.setMessage(failed);
+		}
+		return response;
+	}
+	
+	@GetMapping("/getAllRecommeded")
+	public CricketMatchResponse getAllRecommededMatches() {
+		CricketMatchResponse response = new CricketMatchResponse();
+		List<NewMatch> matches = service.getAllRecommendedNewMatches();
+		if(matches != null) {
+			response.setHttpStatus(HttpStatus.OK);
+			response.setMessage(success);
+			response.setNewMatches(matches);
+		}else {
+			response.setHttpStatus(HttpStatus.BAD_REQUEST);
+			response.setMessage(failed);
+		}
+		return response;
+	}
+}

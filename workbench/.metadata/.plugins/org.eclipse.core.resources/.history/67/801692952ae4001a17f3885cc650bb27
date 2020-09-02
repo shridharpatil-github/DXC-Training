@@ -1,0 +1,35 @@
+package com.dxc.cricketmatch.service;
+
+import java.util.List;
+
+import com.dxc.cricketmatch.exception.MatchAlreadyExistException;
+import com.dxc.cricketmatch.exception.MatchNotFoundException;
+import com.dxc.cricketmatch.model.Faverites;
+import com.dxc.cricketmatch.model.NewMatch;
+
+/**
+ * @author Debayan
+ * CricketMatchService interface, in this declared all methods, and all these methods are implemented 
+ * by CricketMatchServiceImpl class
+ *
+ */
+public interface CricketMatchService {
+
+	/**
+	 * @return list of recommended matches
+	 */
+	public List<NewMatch> getAllRecommendedNewMatches();
+	/**
+	 * @param newMatch is recommend match
+	 * @return boolean value,true for recommended and false for not recommended
+	 * @throws MatchAlreadyExistException 
+	 */
+	public boolean addToRecommended(NewMatch newMatch) throws MatchAlreadyExistException;
+	/**
+	 * @param matchId to delete the match
+	 * @param email 
+	 * @return boolean value, true for deleted match, false for match not deleted
+	 * @throws MatchNotFoundException 
+	 */
+	public boolean unrecommendMatch(long matchId, String email) throws MatchNotFoundException;
+}

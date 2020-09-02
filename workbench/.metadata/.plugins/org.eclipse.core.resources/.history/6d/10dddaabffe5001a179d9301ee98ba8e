@@ -1,0 +1,140 @@
+2020-08-24 09:39:54 [main] INFO  c.d.c.CricketprojectApplication -
+				Starting CricketprojectApplication on DESKTOP-8LKM104 with PID 15188 (D:\workbench\cricketproject\target\classes started by lenovo in D:\workbench\cricketproject)
+2020-08-24 09:39:54 [main] INFO  c.d.c.CricketprojectApplication -
+				No active profile set, falling back to default profiles: default
+2020-08-24 09:39:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-08-24 09:39:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 56ms. Found 1 MongoDB repository interfaces.
+2020-08-24 09:39:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 7777 (http)
+2020-08-24 09:39:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-7777"]
+2020-08-24 09:39:56 [main] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-08-24 09:39:56 [main] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-24 09:39:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-08-24 09:39:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+				Root WebApplicationContext: initialization completed in 2008 ms
+2020-08-24 09:39:56 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-08-24 09:39:56 [cluster-ClusterId{value='5f433d947ed9c41c25fd0166', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+2020-08-24 09:39:56 [cluster-ClusterId{value='5f433d947ed9c41c25fd0166', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4099700}
+2020-08-24 09:39:57 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-24 09:39:58 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 09:39:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-7777"]
+2020-08-24 09:39:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 7777 (http) with context path ''
+2020-08-24 09:39:58 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Context refreshed
+2020-08-24 09:39:58 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2020-08-24 09:39:58 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+				Scanning for api listing references
+2020-08-24 09:39:58 [main] INFO  c.d.c.CricketprojectApplication -
+				Started CricketprojectApplication in 4.704 seconds (JVM running for 6.085)
+2020-08-24 10:28:50 [http-nio-7777-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-24 10:28:50 [http-nio-7777-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2020-08-24 10:28:50 [http-nio-7777-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+				Completed initialization in 51 ms
+2020-08-24 10:28:51 [http-nio-7777-exec-2] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:28:51 [http-nio-7777-exec-2] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:2, serverValue:15}] to localhost:27017
+2020-08-24 10:28:51 [http-nio-7777-exec-2] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@6b0cd3d9
+2020-08-24 10:28:51 [http-nio-7777-exec-2] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:28:53 [http-nio-7777-exec-1] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:28:53 [http-nio-7777-exec-1] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@6cdfed38
+2020-08-24 10:28:53 [http-nio-7777-exec-1] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:28:59 [http-nio-7777-exec-4] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:28:59 [http-nio-7777-exec-4] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@65377cbb
+2020-08-24 10:28:59 [http-nio-7777-exec-4] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:29:01 [http-nio-7777-exec-5] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:29:01 [http-nio-7777-exec-5] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@716bbeb0
+2020-08-24 10:29:01 [http-nio-7777-exec-5] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:29:03 [http-nio-7777-exec-6] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:29:03 [http-nio-7777-exec-6] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@3a34505b
+2020-08-24 10:29:03 [http-nio-7777-exec-6] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:29:05 [http-nio-7777-exec-7] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:29:05 [http-nio-7777-exec-7] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@7aecc6
+2020-08-24 10:29:05 [http-nio-7777-exec-7] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:29:07 [http-nio-7777-exec-8] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:29:07 [http-nio-7777-exec-8] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@7b08af4b
+2020-08-24 10:29:07 [http-nio-7777-exec-8] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.addToRecommended(NewMatch)
+2020-08-24 10:29:12 [http-nio-7777-exec-10] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:29:12 [http-nio-7777-exec-10] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@7b633400
+2020-08-24 10:29:12 [http-nio-7777-exec-10] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:29:16 [http-nio-7777-exec-9] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:29:16 [http-nio-7777-exec-9] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@4f036765
+2020-08-24 10:29:16 [http-nio-7777-exec-9] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:32:15 [http-nio-7777-exec-1] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:32:15 [http-nio-7777-exec-1] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@62180ed3
+2020-08-24 10:32:15 [http-nio-7777-exec-1] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:46:23 [http-nio-7777-exec-4] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:46:23 [http-nio-7777-exec-4] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@2570ca85
+2020-08-24 10:46:23 [http-nio-7777-exec-4] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:46:27 [http-nio-7777-exec-6] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.unrecommendMatch(long,String)
+2020-08-24 10:46:27 [http-nio-7777-exec-6] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@355a8120
+2020-08-24 10:46:27 [http-nio-7777-exec-6] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.unrecommendMatch(long,String)
+2020-08-24 10:46:27 [http-nio-7777-exec-7] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:46:27 [http-nio-7777-exec-7] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@ebd02b9
+2020-08-24 10:46:27 [http-nio-7777-exec-7] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:46:38 [http-nio-7777-exec-8] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:46:38 [http-nio-7777-exec-8] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@75cf5e5a
+2020-08-24 10:46:38 [http-nio-7777-exec-8] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:46:52 [http-nio-7777-exec-10] INFO  c.d.c.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()
+2020-08-24 10:46:52 [http-nio-7777-exec-10] INFO  c.d.c.aspectj.LoggingAspect -
+				----@AfterReturning---com.dxc.cricketmatch.response.CricketMatchResponse@51b03ca2
+2020-08-24 10:46:52 [http-nio-7777-exec-10] INFO  c.d.c.aspectj.LoggingAspect -
+				----------@After(afterController()CricketMatchResponse com.dxc.cricketmatch.controller.CricketMatchController.getAllRecommededMatches()

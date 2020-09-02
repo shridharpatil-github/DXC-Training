@@ -1,0 +1,12 @@
+package com.dxc.cricketmatch.exception;
+
+public class MatchNotAddedException extends Exception{
+
+	/**
+	 * @param message
+	 */
+	public MatchNotAddedException(String message) {
+		// TODO Auto-generated constructor stub
+		super(message);
+	}
+}

@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+D:\Daily_Discussion\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\642255623.index
+\springresthibernateauthentication\src\main\java
+D:\Daily_Discussion\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1958978257.index
+\mvc_jdbc\src
+D:\Daily_Discussion\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\65516233.index
+\keepnote-step2-boilerplate\src\main\java
+D:\Daily_Discussion\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2471391691.index
+\student\src\main\resources

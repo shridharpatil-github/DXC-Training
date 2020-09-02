@@ -1,0 +1,6 @@
+127.0.0.1 - - [17/Jul/2020:10:48:46 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [17/Jul/2020:10:50:15 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Jul/2020:10:53:01 +0530] "GET /springresthibernateuserauthentication/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [17/Jul/2020:10:55:50 +0530] "POST /springresthibernateuserauthentication/addBook HTTP/1.1" 401 20
+0:0:0:0:0:0:0:1 - - [17/Jul/2020:10:58:38 +0530] "POST /springresthibernateuserauthentication/login HTTP/1.1" 200 20
+0:0:0:0:0:0:0:1 - - [17/Jul/2020:10:58:47 +0530] "POST /springresthibernateuserauthentication/addBook HTTP/1.1" 201 15

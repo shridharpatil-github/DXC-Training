@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="shreedharagowdabookintegratemysql07082020"/>
+<aop-project name="cricketmatch-user-authentication"/>
+<aop-project name="jwtauthenticationforkeepnote"/>
+<aop-project name="shreedharagowdaspringassessment10082020"/>
+<aop-project name="spring-demo"/>
+<aop-project name="cricketproject"/>
+<aop-project name="keepnoteservice"/>
+<aop-project name="shreedharagowdabookintegratemongo07082020"/>
+<aop-project name="shreedharagowdabookuserauthentication08082020"/>
+<aop-project name="spring-boot-item"/>
+</aop-reference-model>
