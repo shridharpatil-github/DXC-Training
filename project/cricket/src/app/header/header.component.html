@@ -1,0 +1,49 @@
+ <!-- navbar section starts  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-info py-3 ">
+  <!--src="https://i.postimg.cc/bNQp0RDW/1.jpg"-->
+ 
+   <a routerLink="/"><img style="width: 75px; height: 50px;" class="navbar-brand" 
+     src="https://pbs.twimg.com/profile_images/853850199609024512/Rjw4RCp7_400x400.jpg"/></a>
+   <a class="navbar-brand" href="#">CricInfo</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+ 
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+     <ul class="navbar-nav ml-auto ">
+      <li class="nav-item active">
+        <a class="nav-link text-light" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          My Recommendation
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="nav-link dropdown-item bg-info" routerLink="new-matches">New Matches</a>
+          <a class="nav-link dropdown-item bg-info" *ngIf="status" routerLink="recommended-matches">Recommended</a>
+          <a class="nav-link dropdown-item bg-info" *ngIf="status" routerLink="faverites">Favorites</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link text-light" routerLink="up-coming-matches">Up Comming Matches</a></li>
+      <li class="nav-item"><a class="nav-link text-light" routerLink="old-matches">Old Matches</a></li>    
+ </ul>
+ <form class="form-inline my-2  my-lg-0 ml-auto">
+  <span> <li  *ngIf="status" class="dropdown dropleft">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle user-action"><img  style="height: 30px; width: 40px;" src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png" class="avatar" alt="Avatar"><b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a *ngIf="status" routerLink="profile"><i class="fa fa-user-o"></i> Profile</a></li>
+      <li class="divider"></li>
+      <li><a (click)="logout()" routerLink="login"><i class="material-icons">&#xE8AC;</i> Logout</a></li>
+    </ul>
+  </li></span>  
+  <!-- <span><a class="nav-item nav-link text-light" *ngIf="status" (click)="logout()" routerLink="login">Logout</a></span> -->
+  <span><a class="nav-item nav-link text-light" *ngIf="!status" routerLink="login">Sign In</a></span>
+  <span> <a class="nav-item nav-link text-light" *ngIf="!status" routerLink="register">Register</a></span>
+ 
+   </form>
+ </div>
+ 
+  
+ </nav>
+ <!-- navbar section ended  -->

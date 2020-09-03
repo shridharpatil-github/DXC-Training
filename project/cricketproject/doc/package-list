@@ -1,0 +1,14 @@
+com.dxc.cricketmatch
+com.dxc.cricketmatch.aspectj
+com.dxc.cricketmatch.controller
+com.dxc.cricketmatch.exception
+com.dxc.cricketmatch.filter
+com.dxc.cricketmatch.model
+com.dxc.cricketmatch.repository
+com.dxc.cricketmatch.response
+com.dxc.cricketmatch.service
+com.dxc.cricketmatch.swaggerconfig
+com.dxc.cricketmatch.test
+com.dxc.cricketmatch.test.controller
+com.dxc.cricketmatch.test.repository
+com.dxc.cricketmatch.test.service

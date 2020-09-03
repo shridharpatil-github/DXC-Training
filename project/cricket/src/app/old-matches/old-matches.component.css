@@ -1,0 +1,36 @@
+
+  #btn{
+    font-size: 1em;
+  }
+  
+  .jumbotron {
+    background-image: url(https://t3.ftcdn.net/jpg/03/29/01/92/240_F_329019217_YbZhlVLTpF3UnTxu8Hl9YSz7lpkQftm3.jpg);
+    background-size: cover;
+    margin-bottom: 0px;
+  }
+  hr{
+    background-color: black;
+  }
+  
+  .container{
+    background-color: brown;
+  }
+  
+  .card{
+    margin-top: 50px;
+    color: black;
+    border-color: black;
+    background-color:LightGray;
+    box-shadow:  0 0 2.7px  rgb(212, 218, 207);
+  }
+  #team{
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS';
+  }
+  #place{
+    font-size: 1em;
+  }
+  #toss{
+    font-size: 1em;
+  }
+  

@@ -1,0 +1,38 @@
+ <!--Jumbotron section starts from here-->
+
+ <div class="jumbotron">
+    <div class="rounded-bottom">
+    <div class="row" >
+        
+        <div class="new-match col-md-4 p-1" *ngFor="let match of recommendedMatches">
+         
+          <div class="card col-sm-12">
+            <div class="card-body pb-0">
+              <div class="card-header d-flex justify-content-between">
+                <p id="team" class="mb-0 "> {{match.team1}} <br> vs <br> {{match.team2}} </p>
+                <p class="mb-0 ">{{match.date | date}}</p>
+              </div>
+              <hr>
+            </div>
+            
+            
+            <div class="card-body pt-0">
+              <p id="toss" class="mb-1" *ngIf="match.matchStarted"> Match Started <span style="color: red;">*</span></p>
+            
+            <p id="toss" class="mb-1" *ngIf="!match.matchStarted"> Match Not Started</p>
+    
+              <p id="toss" class="mb-1">Toss won by : {{match.toss_winner_team}}</p>
+              
+              <p id="toss" class="mb-1">Winner Team :  {{match.winner_team}}</p>
+              <p id="toss" class="mb-1"> <img src="https://cdn0.iconfinder.com/data/icons/shopping-e-commerce-15/128/RECOMMENDED-512.png" width="20px" height="20px" alt="recommended">{{match.email.length}} </p>
+              
+              <button id="btn" routerLink="/faverites" class="btn border-dark btn-outline-danger float-right" (click)="unRecommendMatch(match)">Un Recommend</button>
+            </div>
+          </div>
+        </div>
+      
+        </div>
+    </div>
+    </div>
+      <!--Jumbotron section ended here-->
+  

@@ -1,0 +1,46 @@
+
+<!--Jumbtron session started here-->
+
+<div class="jumbotron">
+  <div class="md-form mt-0">
+    <!--Search section -->
+    <input class="form-control" type="search" placeholder="Search" [(ngModel)]="search" id="search" aria-label="Search">
+  </div>
+<div class="rounded-bottom">
+  <div class="row" >
+    <div class="col-md-4 p-1" *ngFor="let match of matches | searchMatches : search">
+     
+      <!--Used card body to display the new matches along with date-->
+      <div class="card col-sm-12">
+       <!--Card body starts-->
+
+        <div class="card-body pb-0">
+          <div class="card-header d-flex justify-content-between">
+            <p id="team" class="mb-0 "> {{match["team-1"]}} <br> vs <br> {{match["team-2"]}} </p>
+            <p class="mb-0 ">{{match.date | date}}</p>
+          </div>
+          <hr>
+        </div>
+         <!--Card body ended-->
+
+        
+        <!--Card body starts-->
+        <div class="card-body pt-0">
+          <p id="toss" class="mb-1" *ngIf="match.matchStarted"> Match Started <span style="color: red;">*</span></p>
+        
+        <p id="toss" class="mb-1" *ngIf="!match.matchStarted"> Match Not Started</p>
+
+          <p id="toss" class="mb-1">Match Type : {{match.type}}</p>
+          
+          <p id="toss" class="mb-1">Winner Team :  {{match.winner_team}}</p>
+          <!--Recomondation button -->
+          <button id="btn" class="btn border-dark btn-outline-success float-right" (click)="addToReccommend(match)">Recommend</button>
+        </div>
+       <!--Card body ended-->
+
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+<!--Jumbtron session ended -->

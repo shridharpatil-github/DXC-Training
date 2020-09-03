@@ -1,0 +1,50 @@
+/*css for login.component.html is started here*/
+.container{
+    background-image: url(https://t3.ftcdn.net/jpg/03/29/01/92/240_F_329019217_YbZhlVLTpF3UnTxu8Hl9YSz7lpkQftm3.jpg);
+    background-size: cover;
+    margin-bottom: 0px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
+.input-group-prepend span{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+    }
+.card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://image.winudf.com/v2/image/Y29tLnJraGQuaXBsd2FsbHBhcGVyc3Nfc2NyZWVuXzhfMTUzNjA1NDY5OV8wNzg/screen-8.jpg?fakeurl=1&type=.jpg');
+    }
+    /*css for login.component.html is ended here*/

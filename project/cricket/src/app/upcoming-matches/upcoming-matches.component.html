@@ -1,0 +1,30 @@
+<!-- up-comming component  -->
+    <!-- jumbotron starts  -->
+<div class="jumbotron">
+  <div class="md-form mt-0">
+    <input class="form-control" type="search" placeholder="Search" [(ngModel)]="search" id="search" aria-label="Search">
+  </div>
+<div class="rounded-bottom">
+  <div class="row" >
+    <div class="col-md-4 p-1" *ngFor="let match of matches | searchMatches : search">
+     
+      <div class="card col-sm-12">
+        <div class="card-body pb-0">
+          <div class="card-header d-flex justify-content-between">
+            <p id="team" class="mb-0 "> {{match.date}}</p>
+          </div>
+          <hr>
+        </div>
+        
+        
+        <div class="card-body pt-0">
+          
+          <p id="toss" class="mb-1">  {{match.name}}</p>
+          </div>
+      </div>
+    </div>
+  
+    </div>
+</div>
+</div>
+    <!-- jumbotron ended  -->

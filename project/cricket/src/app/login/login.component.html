@@ -1,0 +1,74 @@
+<!--Container started here-->
+<div class="container" >
+    <br/>
+    <div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+        <h1 class="card-title mt-3 text-center">Sign In</h1>
+    
+        <p>
+            <a href="https://twitter.com/login" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+            <a href="https://www.facebook.com/" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+        </p>
+        <p class="divider-text">
+            <span class="bg-light">OR</span>
+        </p>
+        
+    <!--Form starts here-->
+    <form class="float-right" #form="ngForm" id="loginForm">
+        <!--Email Section started here-->
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control"  id="email" name="email"
+                        placeholder="Enter email" [(ngModel)]="user.email"  minlength="3"
+                         #email="ngModel" required email>
+         <!--Email validation starts done with touch,minimum length and validity of email-->
+        </div>
+                         <div *ngIf="email.touched && email.errors">
+                     <div class="alert alert-danger" *ngIf="email.errors.required">
+                            Email is required for ur login!!!
+                     </div>
+                     <div class="alert alert-danger" *ngIf="email.errors.minlength">
+                           Email should be of minimum 3 characters!!!
+                     </div>
+                    
+                 </div>
+                 <!-- <div  *ngIf="!email.valid">
+                        <div class="alert alert-danger" *ngIf="email.errors.email">
+                        Email is invalid please use @ symbol
+                        </div> -->
+    
+         <!--Email validation ended-->
+                 <!-- </div> -->
+        <!--Email Section endedd here-->
+        <!--Password Section started here-->
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" [(ngModel)]="user.password" 
+                        #password="ngModel"  id="pwd" name="pwd" placeholder="Enter your password" required minlength="6"/>
+                      </div>
+                          <div *ngIf="password.touched && password.errors">
+                          <div *ngIf="password.errors.required" class="alert alert-danger">
+                            password is required
+                           </div> 
+                           <div class="alert alert-danger" *ngIf="password.errors.minlength">
+                            password should be of minimum 6 characters!!!
+                      </div>
+                          </div>
+                         
+                    <!--Password Section started here-->
+                
+                    <div class="form-group">
+                        <button type="submit" id="btnSubmit" class="btn btn-primary btn-block" [disabled]="form.invalid" (click)="login()"> Sign In  </button>
+                    </div>
+                </form>
+                <!--Form ended here-->
+    </article>
+    </div> <!-- card.// -->
+    
+    </div> 
+    <!--container end.//-->
+    
